@@ -28,6 +28,17 @@ Hence, Wheeler, acting as a plug and play instrument provides features which hel
 4) Remind about important "things to do" by automatically classifying "heard" information as important or trivial.
 
 
+##Our Target Audience?
+
+•Handicapped people: One billion people in the world’s population face some sort of disability. 
+
+•Elderly people: 617 million people in the world’s population consists of elderly people (aged 65 and over). 
+
+•Handicapped as well as elderly: About 250 million people which is about 46% of the elderly face some sort of disability in their lives which means there’s almost a 50% chance that 2 out of 4 people sitting in a room will fall under his category in the future. 
+
+Our product will be useful to all three of these target audiences while being especially useful to the third category
+
+
 ## Why is Wheeler better?
 
 Wheeler empowers users with a distinctive set of features that other competitors are nowhere close to.
@@ -49,6 +60,20 @@ seeing AI and such technology is only available on iPhones and such devices. Thi
 
 Wheeler is a plug and play device as mentioned before and hence the major part of "our" expenditure- the actual wheelchair cost is cut down. 
 
-We plan to give tablets (acting as display screens) to our users which would be integrated into the exisiting wheelchair by our technical assistants. 
+We intend to follow an Overage Charge Business Model.
 
-Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and the selling price to be around Rs. 12,000 (additional Rs. 100 per month for database costs and improvements to the product).
+Base Charges:
+
+•Cost of basic tablets: ₹8,500. 
+
+•Additional hardware costs: ₹3,000. 
+
+•Cost of technical assistant to install equipment: ₹2,000. 
+
+Subscription Charges:
+
+•₹150 per month for maintenance and server (We believe this would be enough considering our target audience is quite huge). 
+
+Therefore, the total cost price of Wheeler is about ₹13,500. We intend to sell Wheeler for ₹15,000 as a base charge while also charging ₹150 per month. 
+
+The reason we plan to offer such low prices at the start is so that more people get the opportunity to try out our product and market it through the word of mouth due to its excellent quality and features. Over time we plan to increase the price so as to gain enough profits to further improve this product, while keeping in mind that we don’t exceed the affordable medical budget of a common man.
