@@ -1,2 +1,1 @@
-from .api import Api
-from .pyzomato import Pyzomato
+from newsapi.newsapi_client import NewsApiClient
