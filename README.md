@@ -62,7 +62,7 @@ Wheeler is a plug and play device as mentioned before and hence the major part o
 
 We intend to follow an Overage Charge Business Model.
 
-#Base Charges:
+###Base Charges:
 
 •Cost of basic tablets: ₹8,500. 
 
@@ -70,7 +70,7 @@ We intend to follow an Overage Charge Business Model.
 
 •Cost of technical assistant to install equipment: ₹2,000. 
 
-#Subscription Charges:
+###Subscription Charges:
 
 •₹150 per month for maintenance and server (We believe this would be enough considering our target audience is quite huge). 
 
