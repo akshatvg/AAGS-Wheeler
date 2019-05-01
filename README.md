@@ -28,7 +28,7 @@ Hence, Wheeler, acting as a plug and play instrument provides features which hel
 4) Remind about important "things to do" by automatically classifying "heard" information as important or trivial.
 
 
-##Our Target Audience?
+### Our Target Audience?
 
 •Handicapped people: One billion people in the world’s population face some sort of disability. 
 
