@@ -36,7 +36,7 @@ Hence, Wheeler, acting as a plug and play instrument provides features which hel
 
 •Handicapped as well as elderly: About 250 million people which is about 46% of the elderly face some sort of disability in their lives which means there’s almost a 50% chance that 2 out of 4 people sitting in a room will fall under his category in the future. 
 
-Our product will be useful to all three of these target audiences while being especially useful to the third category
+Our product will be useful to all three of these target audiences while being especially useful to the third category.
 
 
 ## Why is Wheeler better?
