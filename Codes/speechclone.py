@@ -1,6 +1,7 @@
 from gtts import gTTS
 import speech_recognition as sr
 import os
+import pyttsx3
 import re
 import webbrowser
 import smtplib
@@ -12,16 +13,13 @@ import cv2
 #from pyzomato import Pyzomato
 #p= Pyzomato('263457c3373e779946164cef05a88eb0')
 
-
-#import pyttsx3
-
 def talkToMe(audio):
 
     print(audio)
     for line in audio.splitlines():
-        '''engine = pyttsx3.init()
+        engine = pyttsx3.init()
         engine.say("say"+ audio)
-        engine.runAndWait()'''
+        engine.runAndWait()
         os.system("say " + audio)
 
 def currentad():
@@ -46,8 +44,6 @@ def myCommand():
         audio = r.listen(source)
 
     try:
-        
-        
         command = r.recognize_google(audio).lower()
         if 'villa' in command:
             command='okay wheeler'
@@ -78,7 +74,7 @@ def myCommand():
 
     except sr.UnknownValueError:
         print('Your last command couldn\'t be heard')
-        intent = myCommand();
+        intent = myCommand()
 
     return intent
 
@@ -184,7 +180,7 @@ def assistant(intent):
                             position = faceMatch['Face']['BoundingBox']
                             confidence = str(faceMatch['Face']['Confidence'])
                             f=1
-                            talToMe('The face at ' +
+                            talkToMe('The face at ' +
                                    str(position['Left']) + ' ' +
                                    str(position['Top']) +
                                    ' matches with ' + confidence + '% confidence')
