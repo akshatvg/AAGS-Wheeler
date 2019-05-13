@@ -1,4 +1,4 @@
-![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/header.png "Wheeler Header")
+![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/header.png "Wheeler Header")
 
 # AAGS- Wheeler
 
@@ -45,6 +45,7 @@ lens. Therefore, they can guide the user remotely.
 4. According to our estimations, the cost of Wheeler is a lot lower than a high-end device like iPhone. Currently,
 seeing AI and such technology is only available on iPhones and such devices. This makes the smart phones less accessible as a solution due to the high cost associated.
 
+
 ## Want to know our business model?
 
 Wheeler is a plug and play device as mentioned before and hence the major part of "our" expenditure- the actual wheelchair cost is cut down. 
@@ -52,3 +53,8 @@ Wheeler is a plug and play device as mentioned before and hence the major part o
 We plan to give tablets (acting as display screens) to our users which would be integrated into the exisiting wheelchair by our technical assistants. 
 
 Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and the selling price to be around Rs. 12,000 (additional Rs. 100 per month for database costs and improvements to the product).
+
+
+## Check out Wheeler's introductory video at:
+
+<http://bit.ly/WheelerIntro>
