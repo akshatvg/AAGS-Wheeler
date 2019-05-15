@@ -58,3 +58,7 @@ Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and 
 ## Check out Wheeler's introductory video at:
 
 <http://bit.ly/WheelerIntro>
+
+## Check out Wheeler's demo video at:
+
+<http://bit.ly/WheelerDemo>
