@@ -11,7 +11,7 @@ import os
 import cv2
 from pyzomato import Pyzomato
 p= Pyzomato('263457c3373e779946164cef05a88eb0')
-import paho.mqtt.publish as publish
+#import paho.mqtt.publish as publish
 
 
 import pyttsx3

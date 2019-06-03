@@ -10,8 +10,8 @@ import urllib
 import boto3
 import os
 import cv2
-#from pyzomato import Pyzomato
-#p= Pyzomato('263457c3373e779946164cef05a88eb0')
+from pyzomato import Pyzomato
+p= Pyzomato('263457c3373e779946164cef05a88eb0')
 
 def talkToMe(audio):
 
