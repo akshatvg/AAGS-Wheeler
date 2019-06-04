@@ -22,7 +22,7 @@ function postChatMessage (response) {
   res_list = document.getElementById("chat-responses"); //chat-responses should be the class of the mic button in the html.
 
   element_val = `
-  User: ${response}
+   You Said: ${response}
   `
   res_list.append(element_val);
  var respon_json = {"text": response}
@@ -58,11 +58,11 @@ function listenForSpeech () {
         console.log(isRecording)
         if (isRecording){
           isRecording = false
-          recordingStatus.innerText = 'speak your querry :)'
+          recordingStatus.innerText = 'Speak Your Query'
           return 0;
         }
         isRecording = true
-        recordingStatus.innerText = 'Listening for speech'
+        recordingStatus.innerText = 'Listening To You'
         var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
         var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
         var recognition = new SpeechRecognition()

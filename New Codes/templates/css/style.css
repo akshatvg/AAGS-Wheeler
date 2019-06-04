@@ -1,3 +1,7 @@
+body {
+  background-color: #AF282A;
+}
+
 ul.chat-messages li {
   list-style-type:none;
 }
