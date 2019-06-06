@@ -32,7 +32,7 @@ function postChatMessage(response) {
   <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle"
       style="margin-right:8px;" />
 </span>
-  <p>
+  <p style="color: black;">
      {{response}}
   </p>
 </div>
@@ -108,11 +108,11 @@ function listenForSpeech() {
   console.log(isRecording)
   if (isRecording) {
     isRecording = false
-    recordingStatus.innerText = 'Ask me anything.'
+    recordingStatus.innerText = 'What would you like to know?'
     return 0;
   }
   isRecording = true
-  recordingStatus.innerText = 'Listening for speech'
+  recordingStatus.innerText = 'Listening To You'
   var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
   var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
   var recognition = new SpeechRecognition()
@@ -123,7 +123,7 @@ function listenForSpeech() {
   recognition.start()
 
   recognition.onspeechstart = function () {
-    console.log('Speech has been detected');
+    console.log('Speech Has Been Detected');
   }
 
   recognition.onresult = function (event) {
@@ -137,12 +137,12 @@ function listenForSpeech() {
   }
 
   recognition.onspeechend = function () {
-    recordingStatus.innerText = 'Ask me anything.'
-    console.log('Speech has stopped being detected');
+    recordingStatus.innerText = 'What would you like to know?'
+    console.log('Speech Has Stopped Being Detected');
   }
 
   recognition.onerror = function (event) {
-    console.log('Error occurred in recognition: ' + event.error);
+    console.log('Error Occurred In Recognition: ' + event.error);
   }
 }
 
