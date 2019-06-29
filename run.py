@@ -95,10 +95,11 @@ def get_names():
     elif intent=='person':
         thisdict={
         1:"anand.jpeg",
-        2:"Akshay.jpeg",
-        3:"prateek.jpeg",
-        4:"goldy.jpeg",
-        5:"diya.jpeg"
+        2:"sandeep.jpeg",
+        3:"Akshay.jpeg",
+        4:"prateek.jpeg",
+        5:"goldy.jpeg",
+        6:"diya.jpeg"
 
             }
         n=5
@@ -224,4 +225,5 @@ def get_names():
     
     return json.dumps({"response": ''}), 200
 if __name__=='__main__':
-    app.run(debug=True)
+    webbrowser.open('http://127.0.0.1:5000/')
+    app.run(debug=False)
