@@ -6,8 +6,6 @@
 
 #### A virtual assistant for the elderly & handicapped – a containerized and unified solution to tackle some of the daily challenges faced by millions worldwide. 
 
-Wheeler is an assistive technology that uses several Amazon Web Services services to help elderly and the handicapped in their day to day tasks.
-
 
 ## What is Wheeler ?
 
@@ -21,11 +19,12 @@ Ordinary tasks become difficult and make the disabled elderly less independent. 
 People living with disabilities – whether hidden or visible – have hopes, dreams and frustrations just like everyone else. There are many struggles people with disabilities go through. 
 
 Hence, Wheeler, acting as a plug and play instrument provides features which help the user:
-1) Navigate to and through unknown routes without having someone else push the wheelchair for them. 
-                             Independence++;
-2) Recognise who's in front of them and whether he/she is known to the user from having met before.
-3) Eliminate the need for a smart phone by substituting it with the device itself, say- weather information, reading the news, order food online.
-4) Remind about important "things to do" by automatically classifying "heard" information as important or trivial.
+1) Recognise who's in front of them and whether he/she is known to the user from having met before.
+2) Eliminate the need for a smart phone by substituting it with the device itself, say- weather information, reading the news, etc.
+3) Read prescriptions and other such illegible documents.
+4) Navigate to and through unknown routes without depending on anyone else.
+
+These features were thought of while keeping in mind how forgetful the elderly tend to be and how weak their sense organs like the eyes become with age.
 
 
 ## Why is Wheeler better?
@@ -38,12 +37,8 @@ solution.
 
 2. Wheeler is fully voice controlled and hence, with Wheeler users can get what they are looking for just by asking for it.
 
-3. Wheeler makes it possible for users to ask for help from their friends without them being around. The Remote
-Assistance feature of Wheeler allows trusted friends to connect to the camera and see the world through its
-lens. Therefore, they can guide the user remotely.
-
-4. According to our estimations, the cost of Wheeler is a lot lower than a high-end device like iPhone. Currently,
-seeing AI and such technology is only available on iPhones and such devices. This makes the smart phones less accessible as a solution due to the high cost associated.
+3. According to our estimations, the cost of Wheeler is a lot lower than a high-end device like iPhone. Currently,
+seeing AI and such technology is only available on iPhones and such devices. This makes the smart phones less accessible as a solution due to the high cost associated. Thus, Wheeler is an excellent alternative to smartphones (not to forget again, how forgetful elders are and how regularly they forget to take their phones- if someone is handicapped, there's no way they'll leave their homes without their wheelchair though).
 
 
 ## Want to know our business model?
@@ -63,3 +58,13 @@ Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and 
 ## Check out Wheeler's introductory video at:
 
 <http://bit.ly/WheelerIntro>
+
+
+## Steps to run this project:
+
+```
+git clone https://github.com/akshatvg/AAGS-Wheeler.git
+cd "AAGS-Wheeler"
+pip install -r requirements.txt
+python3 run.py
+```
