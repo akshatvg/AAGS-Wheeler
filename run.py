@@ -21,7 +21,7 @@ CORS(app)# to let the webapp know that this backend is ready to accept stuff.
 
 @app.route('/')
 def home():
-    return render_template ('new_index.html')
+    return render_template ('index.html')
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
@@ -99,7 +99,8 @@ def get_names():
         3:"Akshay.jpeg",
         4:"prateek.jpeg",
         5:"goldy.jpeg",
-        6:"diya.jpeg"
+        6:"diya.jpeg",
+        7:"Akshat_Gupta.jpeg"
 
             }
         n=5
@@ -147,9 +148,9 @@ def get_names():
                     imageSource.close()
                     imageTarget.close()               
                 if(f!=1):
-                    return json.dumps({"response": 'This person doesn\'t exist in our databse, I\'m sorry :( '
+                    return json.dumps({"response": 'This person doesn\'t exist in our database. Would you like to add him? '
                                 }), 200
-                    #print ( 'This person doesn\'t exist in our databse, what is the name of this person?: ')
+                    #print ( 'This person doesn\'t exist in our database, what is the name of this person?: ')
                     #namee= input()+".jpeg"
                     namee= "damn this wont work"
                     namee= namee+ ".jpeg"
