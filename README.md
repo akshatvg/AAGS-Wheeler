@@ -1,4 +1,4 @@
-![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/header.png "Wheeler Header")
+![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/wheeler_logo.png "Wheeler Header")
 
 # AAGS- Wheeler
 
@@ -55,10 +55,11 @@ We plan to give tablets (acting as display screens) to our users which would be 
 Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and the selling price to be around Rs. 12,000 (additional Rs. 100 per month for database costs and improvements to the product).
 
 
+## Check out Wheeler's demo video at:
+
+<http://bit.ly/WheelerDemoVideo>
+
+
 ## Check out Wheeler's introductory video at:
 
 <http://bit.ly/WheelerIntro>
-
-## Check out Wheeler's demo video at:
-
-<http://bit.ly/WheelerDemo>
