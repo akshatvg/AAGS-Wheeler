@@ -1,4 +1,4 @@
-![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/wheeler_logo.png "Wheeler Header" align="center")
+![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/wheeler_logo.png "Wheeler Header")
 
 # AAGS- Wheeler
 
