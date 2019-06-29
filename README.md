@@ -63,8 +63,13 @@ Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and 
 ## Steps to run this project:
 
 ```
-git clone https://github.com/akshatvg/AAGS-Wheeler.git
-cd "AAGS-Wheeler"
-pip install -r requirements.txt
-python3 run.py
+$ git clone https://github.com/akshatvg/AAGS-Wheeler.git
+$ cd "AAGS-Wheeler"
+$ pip install -r requirements.txt
+$ aws configure
+AWS Access Key ID [None]: AKIAJGNPVFZDXZNMYSFA
+AWS Secret Access Key [None]: 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
+Default region name [None]: ap-south-1
+Default output format [None]: 
+$ python3 run.py
 ```
