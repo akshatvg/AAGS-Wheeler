@@ -22,6 +22,12 @@ CORS(app)# to let the webapp know that this backend is ready to accept stuff.
 @app.route('/')
 def home():
     return render_template ('index.html')
+@app.route('/useme.html')
+def useme():
+    return render_template ('useme.html')
+@app.route('/index.html')
+def backhome():
+    return render_template ('index.html')
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
