@@ -67,8 +67,8 @@ $ git clone https://github.com/akshatvg/AAGS-Wheeler.git
 $ cd "AAGS-Wheeler"
 $ pip install -r requirements.txt
 $ aws configure
-AWS Access Key ID [None]: AKIAZ7MZXNDSV44CAGWV
-AWS Secret Access Key [None]: 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
+AWS Access Key ID [None]: AKIAZ7MZXNDSXPQJGROE
+AWS Secret Access Key [None]: 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
 Default region name [None]: ap-south-1
 Default output format [None]: 
 $ python3 run.py
