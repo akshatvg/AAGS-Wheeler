@@ -180,14 +180,14 @@ def get_names():
 
         for image in images:
             file = open(image[0],'rb')
-            object = s3.Object('s3-wheeler1',image[0])
+            object = s3.Object('s3-wheeler',image[0])
             ret = object.put(Body=file,
                                 Metadata={'Name':image[1]}
                                 )
 
 
 
-        bucket='s3-wheeler1'
+        bucket='s3-wheeler'
         photo='test1.jpeg'
         client=boto3.client('rekognition')
         response=client.detect_text(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
@@ -205,7 +205,7 @@ def get_names():
 
 
 
-        s3.Object('s3-wheeler1', 'test1.jpeg').delete()
+        s3.Object('s3-wheeler', 'test1.jpeg').delete()
 
     elif intent=='news':
         def NewsFromBBC():

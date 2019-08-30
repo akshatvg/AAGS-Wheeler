@@ -47,7 +47,6 @@ python-dotenv==0.10.1
 pyttsx3==2.71
 pytz==2019.1
 PyYAML==3.13
-pyzomato==0.5
 react==4.3.0
 redis==3.2.1
 requests==2.21.0
