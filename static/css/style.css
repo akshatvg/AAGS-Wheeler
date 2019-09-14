@@ -1,5 +1,16 @@
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+input,
+button {
+  border: none;
+}
+
+html,
+body {
+  overflow: auto;
 }
 
 ul.chat-messages li {
