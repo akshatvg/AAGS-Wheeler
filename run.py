@@ -25,6 +25,9 @@ def home():
 @app.route('/useme.html')
 def useme():
     return render_template ('useme.html')
+@app.route('/map.html')
+def map():
+    return render_template ('map.html')
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
@@ -88,13 +91,9 @@ def get_names():
         return json.dumps({"response": 'It is a little '+descript_place + ' and temperature outside is, ' + temp_c_str}), 200
 
     elif intent=='maps':
-        reg_ex = re.search('open maps (.*)', command)
-        url = 'https://www.google.com/maps'
-        if reg_ex:
-            subreddit = reg_ex.group(1)
-            url = url + 'r/' #+ subreddit
-        webbrowser.open(url)
-        print('Done!')
+        #webbrowser.open('http:127.0.0.1:5000/map.html')
+        #print('Done!')
+        
         return json.dumps({"response": 'It opened in a new tab.'}), 200
 
     elif intent=='person':
