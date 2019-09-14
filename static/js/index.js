@@ -97,6 +97,9 @@ function postChatMessage(response) {
     dataType: "json",
     success: function (response) {
       speakResponse(response.response);
+      console.log(response.response)
+      document.getElementById('tindis').innerHTML = response.response;
+      //$('#tindis').append(response.response);
       //displayResponse(response.response);
     }
   });

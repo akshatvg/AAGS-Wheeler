@@ -11,6 +11,10 @@ import urllib
 import boto3
 import os
 import cv2
+import googlemaps
+from datetime import datetime
+import analyze as az
+
 
 #import assistant
 
@@ -27,7 +31,8 @@ def useme():
     return render_template ('useme.html')
 @app.route('/map.html')
 def map():
-    return render_template ('map.html')
+    print("sdkvfnmwe",value)
+    return render_template ('map.html', value=value)
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
@@ -93,9 +98,29 @@ def get_names():
     elif intent=='maps':
         #webbrowser.open('http:127.0.0.1:5000/map.html')
         #print('Done!')
+        gmaps = googlemaps.Client(key='AIzaSyAMP6SIK4ruB5Tsl5qR6h54XDcl4FDl3HQ')
+        SUBSCRIPTION_KEY_ENV_NAME = "bc20ced3c3014badbf34d1799e28f2a2"
+        now = datetime.now()
+        x = az.entity_extraction(SUBSCRIPTION_KEY_ENV_NAME,command)
+        if x[1]=='Location' or x[1]=='Organization':
+            c = x[0]
+        else:
+            return json.dumps({"response": 'Give me a specific destination'}), 200
         
-        return json.dumps({"response": 'It opened in a new tab.'}), 200
-
+        directions_result = gmaps.directions("5309, Chester Avenue, Philadelphia",
+                                     c,
+                                     mode="walking",
+                                     departure_time=now)
+        time = directions_result[0]['legs'][0]['duration']['text']
+        dis = directions_result[0]['legs'][0]['distance']['text']
+        instru = []
+        for i in directions_result[0]['legs'][0]['steps']:
+            instru.append(i['html_instructions']+" "+i['distance']['text'] + ' ' + i['duration']['text'] + " Moving from lat : " + str(i['start_location']['lat']) +" , lon : "+str(i['start_location']['lng']) + " to lat : " + str(i['end_location']['lat']) +" , lon : "+str(i['end_location']['lng']))
+        webbrowser.open('http:127.0.0.1:5000/map.html')
+        global value
+        value = time+" "+dis
+        return render_template('map.html',value=value)
+        
     elif intent=='person':
         thisdict={
         1:"anand.jpeg",
