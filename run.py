@@ -106,7 +106,7 @@ def get_names():
         4:"prateek.jpeg",
         5:"goldy.jpeg",
         6:"diya.jpeg",
-        7:"Akshat_Gupta.jpeg"
+        7:"Akshat.jpeg"
 
             }
         n=5
