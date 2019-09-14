@@ -206,7 +206,7 @@ def get_names():
         def NewsFromBBC():
             global new
             new=[] 
-            main_url = " https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=e4313a22f54042c9aba095ce5354be51"
+            main_url = "https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=e4313a22f54042c9aba095ce5354be51"
             open_bbc_page = requests.get(main_url).json() 
             article = open_bbc_page["articles"] 
             results = []
@@ -222,7 +222,7 @@ def get_names():
         new = NewsFromBBC()
         news=' '
         for i in new:
-            news+=i+', \n'
+            news+=i+',\n'+'\n'
         return json.dumps({"response": news})
     
     return json.dumps({"response": ''}), 200

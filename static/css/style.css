@@ -2,12 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 ul.chat-messages li {
   list-style-type: none;
 }
@@ -113,6 +107,12 @@ p.rambot svg {
   border-bottom: 1px dotted #B3A9A9;
 }
 
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 300px;
+}
+
 .chat li.left .chat-body {
   margin-left: 60px;
 }
@@ -216,7 +216,7 @@ p.rambot svg {
   min-height: 50px;
   position: fixed;
   width: 100%;
-  background: #AE1818;
+  background: transparent;
   z-index: 999;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
 }
