@@ -75,9 +75,9 @@ function displayResponse(response) {
     <div class="chat-body"
     style="display: inline-block;padding:0;margin-bottom: 0px;margin-right: 0px;" align="right">
     <div class="header">
-    <strong class="primary-font">Wheeler</strong>
+    <strong class="primary-font">iWheel-inator</strong>
     </div>
-    <img src="../static/img/icons/favicon.png" alt="Wheeler Avatar" class="img-circle"
+    <img src="../static/img/icons/favicon.png" alt="iWheel-inator Avatar" class="img-circle"
         style="margin-left:8px;width: 50px;height: 50px;" />
   </span>
     <p>
@@ -90,7 +90,7 @@ function displayResponse(response) {
   var html = Mustache.to_html(template_two, wheele);
   $('#chat-responses').append(html);
   /*let newChat = document.createElement('p')
-  newChat.innerText = `wheeler : ${response}`
+  newChat.innerText = `iWheel-inator : ${response}`
   chatMessages = document.getElementById("chat-input");
   res_list.append(newChat)*/
 }
