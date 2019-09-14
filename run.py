@@ -32,7 +32,7 @@ def useme():
 @app.route('/map.html')
 def map():
     print("sdkvfnmwe",value)
-    return render_template ('map.html', value=value)
+    return render_template ('map.html', value=value,loc=loc)
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
@@ -113,13 +113,19 @@ def get_names():
                                      departure_time=now)
         time = directions_result[0]['legs'][0]['duration']['text']
         dis = directions_result[0]['legs'][0]['distance']['text']
+        start_loc_lat = dis = directions_result[0]['legs'][0]['start_location']['lat']
+        start_loc_lng = dis = directions_result[0]['legs'][0]['start_location']['lng']
+        end_loc_lat = dis = directions_result[0]['legs'][0]['end_location']['lat']
+        end_loc_lng = dis = directions_result[0]['legs'][0]['end_location']['lng']
         instru = []
         for i in directions_result[0]['legs'][0]['steps']:
             instru.append(i['html_instructions']+" "+i['distance']['text'] + ' ' + i['duration']['text'] + " Moving from lat : " + str(i['start_location']['lat']) +" , lon : "+str(i['start_location']['lng']) + " to lat : " + str(i['end_location']['lat']) +" , lon : "+str(i['end_location']['lng']))
         webbrowser.open('http:127.0.0.1:5000/map.html')
         global value
-        value = time+" "+dis
-        return render_template('map.html',value=value)
+        value = str(time)+" "+str(dis)
+        global loc
+        loc= [start_loc_lat,start_loc_lng,end_loc_lat,end_loc_lng] 
+        return render_template('map.html')
         
     elif intent=='person':
         thisdict={
