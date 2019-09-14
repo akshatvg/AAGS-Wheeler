@@ -71,7 +71,7 @@ function displayResponse(response) {
   };
   var template_two = `
     <ul class="chat">
-    <div><span class="chat-img pull-right" style="display: inline-block">
+    <div align="right"><span class="chat-img pull-right" style="display: inline-block">
     <div class="chat-body"
     style="display: inline-block;padding:0;margin-bottom: 0px;margin-right: 0px;" align="right">
     <div class="header">
