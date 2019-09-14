@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 ul.chat-messages li {
   list-style-type: none;
 }
