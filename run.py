@@ -25,9 +25,6 @@ def home():
 @app.route('/useme.html')
 def useme():
     return render_template ('useme.html')
-@app.route('/index.html')
-def backhome():
-    return render_template ('index.html')
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
 
@@ -59,7 +56,7 @@ def get_names():
         intent= 'nothing'
     else:
         intent = b[0]['intent']
-    print(intent)
+    print('the intent is:' , intent)
     def currentad():
         send_url = "http://api.ipstack.com/check?access_key=9a86bc5e18df530bd1ded7ff6620187d"
         geo_req = requests.get(send_url)
@@ -83,10 +80,12 @@ def get_names():
         temp_c_str = str(int(temp_c)) + ' degree Celsius '
         descript_place = weather['list'][0]['weather'][0]['main']
         #print(descript_place + ' ' + temp_c_str)
-        print('The Current weather is '+descript_place + ' and temperature is ' + temp_c_str)
+        if descript_place == 'Clouds':
+            descript_place = 'overcast'
+        print('It is a little '+descript_place + ' and temperature outside is, ' + temp_c_str)
         
        #response = assistant.assistant(resp_json["test"])
-        return json.dumps({"response": 'The Current weather is '+descript_place + ' and temperature is ' + temp_c_str}), 200
+        return json.dumps({"response": 'It is a little '+descript_place + ' and temperature outside is, ' + temp_c_str}), 200
 
     elif intent=='maps':
         reg_ex = re.search('open maps (.*)', command)
@@ -113,60 +112,56 @@ def get_names():
         f=0
 
         ch='y'
-        chcounter=0
-        if __name__ == "__main__":
-            while(ch=='y'):
+        while(ch=='y'):
 
-                camera = cv2.VideoCapture(0)
-                return_value, image = camera.read()
-                cv2.imwrite('test.jpeg', image)
-                del(camera)
+            camera = cv2.VideoCapture(0)
+            return_value, image = camera.read()
+            cv2.imwrite('test.jpeg', image)
+            del(camera)
 
 
-                sourceFile='test.jpeg'#from camera
-                for i in range(1,n+1):
-    # targetFile='anand.jpeg'
-                    targetFile= thisdict[i]
-                    client=boto3.client('rekognition')
+            sourceFile='test.jpeg'#from camera
+            for i in range(1,n+1):
+# targetFile='anand.jpeg'
+                targetFile= thisdict[i]
+                client=boto3.client('rekognition')
 
-                    imageSource=open(sourceFile,'rb')
-                    imageTarget=open(targetFile,'rb')
+                imageSource=open(sourceFile,'rb')
+                imageTarget=open(targetFile,'rb')
 
-                    response=client.compare_faces(SimilarityThreshold=70,SourceImage={'Bytes': imageSource.read()},TargetImage={'Bytes': imageTarget.read()})
-                    f=2
-                    for faceMatch in response['FaceMatches']:
-                        position = faceMatch['Face']['BoundingBox']
-                        confidence = str(faceMatch['Face']['Confidence'])
-                        f=1
-                        nameee=''
-                        for i in targetFile:
-                            if i != '.':
-                                nameee+=i
-                            else:
-                                break
-                        return json.dumps({"response": 'This is' + ' ' + nameee + ', '+ ' who\'s come to visit you! '
-                                }), 200
-                        '''print('The face at ' +
-                                str(position['Left']) + ' ' +
-                                str(position['Top']) +
-                                ' matches with ' + confidence + '% confidence')
-                        print(str(thisdict[i].split(".jpeg")))'''
-                    imageSource.close()
-                    imageTarget.close()               
-                if(f!=1):
-                    return json.dumps({"response": 'This person doesn\'t exist in our database. Would you like to add him? '
-                                }), 200
-                    #print ( 'This person doesn\'t exist in our database, what is the name of this person?: ')
-                    #namee= input()+".jpeg"
-                    namee= "damn this wont work"
-                    namee= namee+ ".jpeg"
-                    n=n+1
-                    os.rename("test.jpeg", namee)
-                    d1={n:namee}
-                    thisdict.update(d1)
-                elif (f==1):
-                    os.remove("test.jpeg")
-                    ch='n'
+                response=client.compare_faces(SimilarityThreshold=70,SourceImage={'Bytes': imageSource.read()},TargetImage={'Bytes': imageTarget.read()})
+                f=2
+                for faceMatch in response['FaceMatches']:
+                    f=1
+                    nameee=''
+                    for i in targetFile:
+                        if i != '.':
+                            nameee+=i
+                        else:
+                            break
+                    return json.dumps({"response": 'This is' + ' ' + nameee + ', '+ ' who\'s come to visit you! '
+                            }), 200
+                    '''print('The face at ' +
+                            str(position['Left']) + ' ' +
+                            str(position['Top']) +
+                            ' matches with ' + confidence + '% confidence')
+                    print(str(thisdict[i].split(".jpeg")))'''
+                imageSource.close()
+                imageTarget.close()               
+            if(f!=1):
+                return json.dumps({"response": 'This person doesn\'t exist in our database. Would you like to add him? '
+                            }), 200
+                #print ( 'This person doesn\'t exist in our database, what is the name of this person?: ')
+                #namee= input()+".jpeg"
+                namee= "damn this wont work"
+                namee= namee+ ".jpeg"
+                n=n+1
+                os.rename("test.jpeg", namee)
+                d1={n:namee}
+                thisdict.update(d1)
+            elif (f==1):
+                os.remove("test.jpeg")
+                ch='n'
 
     elif intent=='text':
         new=[]
