@@ -124,7 +124,11 @@ def get_names():
         our_loc = str(results[0]['formatted'])
         print(our_loc)
         
-        directions_result = gmaps.directions(our_loc,
+        '''directions_result = gmaps.directions(our_loc,
+                                     c,
+                                     mode="walking",
+                                     departure_time=now)'''
+        directions_result = gmaps.directions('Hodson Hall, Baltimore, MD',
                                      c,
                                      mode="walking",
                                      departure_time=now)
