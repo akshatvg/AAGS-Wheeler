@@ -10,10 +10,15 @@ import requests,json
 import urllib
 import boto3
 import os
+import subprocess
 import cv2
 import googlemaps
 from datetime import datetime
 import analyze as az
+from opencage.geocoder import OpenCageGeocode
+
+  
+
 
 
 #import assistant
@@ -31,7 +36,6 @@ def useme():
     return render_template ('useme.html')
 @app.route('/map.html')
 def map():
-    print("sdkvfnmwe",value)
     return render_template ('map.html', value=value,loc=loc)
 @app.route('/print/name', methods=['POST', 'GET'])
 def get_names():
@@ -106,8 +110,21 @@ def get_names():
             c = x[0]
         else:
             return json.dumps({"response": 'Give me a specific destination'}), 200
+
+
+
+        send_url = "http://api.ipstack.com/check?access_key=9a86bc5e18df530bd1ded7ff6620187d"
+        geo_req = requests.get(send_url)
+        geo_json = json.loads(geo_req.text)
+        lat = geo_json['latitude']
+        lon = geo_json['longitude']
+        results = geocoder.reverse_geocode(lat, lon)
+        print(lat+0.4,lon+0.4)
+        #pprint(results[0]['formatted'])
+        our_loc = str(results[0]['formatted'])
+        print(our_loc)
         
-        directions_result = gmaps.directions("5309, Chester Avenue, Philadelphia",
+        directions_result = gmaps.directions(our_loc,
                                      c,
                                      mode="walking",
                                      departure_time=now)
@@ -117,15 +134,23 @@ def get_names():
         start_loc_lng = dis = directions_result[0]['legs'][0]['start_location']['lng']
         end_loc_lat = dis = directions_result[0]['legs'][0]['end_location']['lat']
         end_loc_lng = dis = directions_result[0]['legs'][0]['end_location']['lng']
+        
+
         instru = []
         for i in directions_result[0]['legs'][0]['steps']:
             instru.append(i['html_instructions']+" "+i['distance']['text'] + ' ' + i['duration']['text'] + " Moving from lat : " + str(i['start_location']['lat']) +" , lon : "+str(i['start_location']['lng']) + " to lat : " + str(i['end_location']['lat']) +" , lon : "+str(i['end_location']['lng']))
         webbrowser.open('http:127.0.0.1:5000/map.html')
+        #print("distance isssshabdgyjasvkd", dis)
         global value
-        value = str(time)+" "+str(dis)
+        value = 'ETA '+ str(time)+' :)'
         global loc
         loc= [start_loc_lat,start_loc_lng,end_loc_lat,end_loc_lng] 
-        return render_template('map.html')
+        mytext = 'Opened in a new tab.'
+        language = 'en'
+        myobj = gTTS(text=mytext, lang=language, slow=False)  
+        myobj.save("welcome.mp3") 
+        subprocess.call(['afplay','welcome.mp3'])
+        return render_template('map.html'), json.dumps({"response": 'It openend on a new Tab'}), 200
         
     elif intent=='person':
         thisdict={
@@ -257,5 +282,10 @@ def get_names():
     
     return json.dumps({"response": ''}), 200
 if __name__=='__main__':
+            #from pprint import pprint
+
+    key = '9ceed27ef0e646188df1656457bdffa6'
+    geocoder = OpenCageGeocode(key)
+
     webbrowser.open('http://127.0.0.1:5000/')
     app.run(debug=False)
