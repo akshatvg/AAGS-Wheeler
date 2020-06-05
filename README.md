@@ -1,11 +1,25 @@
-![Wheeler Header](https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/wheeler_logo.png "Wheeler Header")
-
 # AAGS- Wheeler
 
-## The Only Disability In Life Is A Bad Attitude
+#### The Only Disability In Life Is A Bad Attitude
 
-#### A virtual assistant for the elderly & handicapped – a containerized and unified solution to tackle some of the daily challenges faced by millions worldwide. 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/akshatvg/AAGS-Wheeler?logo=github&style=social)](https://github.com/akshatvg/) [![GitHub last commit](https://img.shields.io/github/last-commit/akshatvg/AAGS-Wheeler?style=social&logo=git)](https://github.com/akshatvg/) [![GitHub stars](https://img.shields.io/github/stars/akshatvg/AAGS-Wheeler?style=social)](https://github.com/akshatvg/AAGS-Wheeler/stargazers) [![GitHub forks](https://img.shields.io/github/forks/akshatvg/AAGS-Wheeler?style=social&logo=git)](https://github.com/akshatvg/AAGS-Wheeler/network)
 
+A virtual assistant for the elderly & handicapped – a containerized and unified solution to tackle some of the daily challenges faced by millions worldwide. 
+
+<p align="center">
+<img src="https://github.com/akshatvg/AAGS-Wheeler/blob/master/Pics/wheeler_logo.png" alt="AAGS-Wheeler Logo"/>
+</p>
+
+![Generic badge](https://img.shields.io/badge/timemator-clone-orange) 
+
+#### Link for [demo](https://bit.ly/WheelerDemoVideo) 
+[![Generic badge](https://img.shields.io/badge/view-intro-orange)](https://bit.ly/WheelerIntro) [![Generic badge](https://img.shields.io/badge/view-demo-orange)](https://bit.ly/WheelerDemoVideo)
+
+## Requirements
+
+[![GitHub top language](https://img.shields.io/github/languages/top/akshatvg/AAGS-Wheeler?logo=html&style=social)](https://github.com/akshatvg/)
+
+The source code of this project is written in **`HTML/CSS/JS`**. So, you do not require anything extra to run this project.
 
 ## What is Wheeler ?
 
@@ -49,18 +63,7 @@ We plan to give tablets (acting as display screens) to our users which would be 
 
 Keeping this in mind, we expect the cost of product to be around Rs. 10,000 and the selling price to be around Rs. 12,000 (additional Rs. 100 per month for database costs and improvements to the product).
 
-
-## Check out Wheeler's demo video at:
-
-<http://bit.ly/WheelerDemoVideo>
-
-
-## Check out Wheeler's introductory video at:
-
-<http://bit.ly/WheelerIntro>
-
-
-## Steps to run this project:
+## Instructions to run
 
 ```
 $ git clone https://github.com/akshatvg/AAGS-Wheeler.git
@@ -73,3 +76,66 @@ Default region name [None]: ap-south-1
 Default output format [None]: 
 $ python3 run.py
 ```
+
+
+## Need help?
+
+
+Feel free to contact me via [Facebook](https://www.facebook.com/akshatvg).
+
+Invite me to connect on [LinkedIn](https://www.linkedin.com/in/akshatvg/).
+
+[![Facebook](https://img.shields.io/badge/Facebook-add-blue.svg?logo=facebook&logoColor=white)](https://www.facebook.com/akshatvg) [![Quora](https://img.shields.io/badge/Quora-ask-red.svg?logo=quora)](https://www.quora.com/profile/Akshat-Gupta-279) [![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)](https://www.instagram.com/akshatvg/) [![GitHub](https://img.shields.io/badge/Snapchat-add-yellow.svg?logo=snapchat&logoColor=white)](https://www.snapchat.com/add/akshatvg) [![Medium](https://img.shields.io/badge/Medium-follow-black.svg?logo=medium&logoColor=white)](https://medium.com/@akshatvg)
+
+
+```bash
+
+
+
+ _____ _                 _     __   __            
+|_   _| |               | |    \ \ / /            
+  | | | |__   __ _ _ __ | | __  \ V /___  _   _   
+  | | | '_ \ / _` | '_ \| |/ /   \ // _ \| | | |  
+  | | | | | | (_| | | | |   <    | | (_) | |_| |  
+  \_/ |_| |_|\__,_|_| |_|_|\_\   \_/\___/ \__,_|  
+                                                  
+                                                  
+______                                            
+|  ___|                                           
+| |_ ___  _ __                                    
+|  _/ _ \| '__|                                   
+| || (_) | |                                      
+\_| \___/|_|                                      
+                                                  
+                                                  
+______      _               _   _               _ 
+| ___ \    (_)             | | | |             | |
+| |_/ / ___ _ _ __   __ _  | |_| | ___ _ __ ___| |
+| ___ \/ _ \ | '_ \ / _` | |  _  |/ _ \ '__/ _ \ |
+| |_/ /  __/ | | | | (_| | | | | |  __/ | |  __/_|
+\____/ \___|_|_| |_|\__, | \_| |_/\___|_|  \___(_)
+                     __/ |                        
+                    |___/                         
+
+ 
+
+
+```
+
+## License
+
+**MIT &copy; [Akshat Gupta](https://github.com/akshatvg/AAGS-Wheeler/blob/master/LICENSE)**
+
+[![GitHub license](https://img.shields.io/github/license/akshatvg/AAGS-Wheeler?style=social&logo=github)](https://github.com/akshatvg/AAGS-Wheeler/blob/master/LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/akshatvg?style=social)](https://twitter.com/akshatvg)
+
+---------
+
+```javascript
+
+if (youEnjoyed) {
+    starThisRepository();
+}
+
+```
+
+-----------
