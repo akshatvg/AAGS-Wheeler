@@ -46,7 +46,7 @@ python-dateutil==2.8.0
 python-dotenv==0.10.1
 pyttsx3==2.71
 pytz==2019.1
-PyYAML==4.2b1
+PyYAML==5.4
 react==4.3.0
 redis==3.2.1
 requests==2.21.0
